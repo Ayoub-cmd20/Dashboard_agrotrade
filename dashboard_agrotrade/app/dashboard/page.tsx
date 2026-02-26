@@ -1,5 +1,7 @@
 import { Card } from '@/components/ui/card';
 import { BarChart3, FileText, Package, Users } from 'lucide-react';
+// 1. Import the chart component we created
+import DashboardCurveChart from '@/components/DashboardCurveChart';
 
 export default function DashboardPage() {
   const stats = [
@@ -60,6 +62,9 @@ export default function DashboardPage() {
           );
         })}
       </div>
+
+      {/* 2. Insert the New Curve Chart Section Here */}
+      <DashboardCurveChart />
 
       {/* Recent Activity Section */}
       <Card className="p-6">
